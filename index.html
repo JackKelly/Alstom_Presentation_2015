@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Data Interpretation: Energy Disaggregation</title>
+
+    <meta name="author" content="Jack Kelly">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/jack.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'bower_components/reveal.js/css/print/pdf.css' : 'bower_components/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Data Interpretation</h1>
+          <h2>Energy Disaggregation</h2>
+          <p>
+            <small>
+              <a href="http://jack-kelly.com">Jack Kelly</a><br>
+              jack.kelly@imperial.ac.uk
+          </small></p>
+        </section>
+
+        <section>
+          <h3>What is Energy Disaggregation?</h3>
+        </section>
+
+        <section>
+          <h3>Aggregate Energy Bill</h3>
+          <img src="images/top_5_energy_aggregate.png">
+        </section>
+        
+        <section>
+          <h3>Itemised Energy Bill</h3>
+          <img src="images/top_5_energy.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_agg.png" >
+        </section>
+
+        <section>
+          <img src="images/area_plot_fridge.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_htpc.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_others.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_dish_washer.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_washer_dryer.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_kettle.png">
+        </section>
+
+        <section>
+          <h3>Why bother with disaggregation?</h3>
+        </section>
+
+        <section>          
+          <img src="images/spinning_disk_meter.jpg" height=650>
+        </section>
+        
+        <section>          
+          <img src="images/Smart_meter_transparent.png" height=650>
+        </section>
+
+        <section>
+          <h1>GB Smart Meter Roll-out</h1>
+          <ul>
+            <li class="fragment">All homes to have a smart
+              meter by <mark>2020</mark>.</li>
+            <li class="fragment">The business case assumes that smart
+              meters will drive <mark>savings of £4.6 billion</mark>
+              due to reduced energy consumption (across both
+              electricity and gas).</li>
+            <li class="fragment">Aggregate data alone unlikely to lead to such
+              savings.</li>
+            <li class="fragment">Disaggregation has been demonstrated to drive savings
+             more effectively than aggregate data alone.</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/NewFridge.jpg" height=650>
+        </section>
+        
+        <section>
+          <img src="images/OldFridge.jpg" height=650>
+        </section>
+        <!--
+        TODO:
+        * smart meter roll out
+        * DECC's projected energy savings
+        * research suggests that disaggregated data helps users to
+          save energy.
+        * illustrate with story of my folk's fridge.
+        -->
+        
+        <section>
+          <h1>My Work</h1>
+          <ul>
+            <li class="fragment">First to apply deep neural nets to energy disaggregation</li>
+            
+          </ul>
+        </section>
+
+        <section id="rnns-for-nilm">
+          <h1>Recurrent Neural Nets</h1>
+          <p class="placeholder"></p>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>          
+          <!-- 
+          ***** D3 (low priority) ******
+          Highlight the connections as data flows through, especially
+          RNN connections.
+          -->
+        </section>
+
+
+        <!-- ******************************************************
+                                   RESULTS
+        ******************************************************** -->
+
+        <section>
+          <h3>Example Output from Deep Neural Net</h3>
+          <div style="height: 600px; width: 1000px;">
+            <!--
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>LSTM</p>
+              <object data="images/net_output_LSTM.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>
+            -->
+            
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>Autoencoder</p>
+              <object data="images/net_output_AE.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>
+
+            <!--
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>Rectangles</p>
+              <object data="images/net_output_rectangles.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>            
+            -->
+          </div>
+        </section>
+
+        <!--
+        <section>          
+          <object data="images/net_output_no_overlap.svg"
+                  type="image/svg+xml" width=1000></object>              
+        </section>
+        -->
+        <section>
+          <h1>My Work</h1>
+          <ul>
+            <li>First to apply deep neural nets to energy disaggregation</li>
+            <li class="fragment">Lead developer on open source disaggregation
+              tool NILMTK</li>
+            <li class="fragment" >Collected &amp; released disaggregated energy dataset:
+              UK-DALE</li>
+            <li class="fragment" >NILM Metadata: metadata schema for energy data
+              <ul><li class="fragment" >Used by > 9 datasets</li></ul></li>
+            
+          </ul>
+        </section>
+
+        <section>
+          <h1>Questions?</h1>
+          <small>jack.kelly@imperial.ac.uk</small>
+        </section>
+
+                
+        <section>
+          <div style="height: 600px; width: 1000px;">
+            <div style="position:absolute;">
+              <p class="tiny"
+                 style="position:absolute; transform: translate(0, 0);">
+                Metrics on Unseen Appliances
+              </p>
+              <object data="images/unseen_houses.svg"
+                      type="image/svg+xml"
+                      style="transform: translate(50%, 0);"
+                      width=600></object>              
+            </div>
+          </div>
+        </section>
+
+        
+        <section>
+          <h1>Deep Neural Nets</h1>
+        </section>
+
+        <section>
+          <p><strong>ImageNet</strong> Large Scale Visual Recognition
+          Challenge (ILSVRC)</p>
+          <img src="images/imagenet.png" height=550>
+          <p class="tiny">From: Krizhevsky, Sutskever &amp;
+          Hinton. <a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks">ImageNet Classification with Deep
+            Convolutional Neural Networks</a>.  NIPS (2012)
+            </p>
+        </section>
+        
+        <section>
+          <img src="images/imagenetResults.png" width="90%">
+          <p class="tiny">Image from <a href="http://devblogs.nvidia.com/parallelforall/mocha-jl-deep-learning-julia/">devblogs.nvidia.com</a></p>
+        </section>        
+
+        <section>
+          <p><strong>Krizhevsky <em>et al.</em>'s DNN Results on ImageNet 2012</strong></p>
+          <img src="images/krizhevskyResults.png" height=550>
+          <p class="tiny">Krizhevsky, Sutskever &amp;
+          Hinton. <a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks">ImageNet Classification with Deep
+            Convolutional Neural Networks</a>.  NIPS (2012)
+            </p>
+        </section>
+
+
+        <!-- ******************************************************
+                           Three DNN ARCHITECTURES FOR NILM
+        ******************************************************** -->
+
+        <section id="rnns-for-nilm">
+          <h1>Recurrent Neural Nets</h1>
+          <p class="placeholder"></p>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>          
+          <!-- 
+          ***** D3 (low priority) ******
+          Highlight the connections as data flows through, especially
+          RNN connections.
+          -->
+        </section>
+
+        <section id="autoencoder-for-nilm">
+          <h1>Denoising Autoencoders</h1>
+          <p class="placeholder"></p>
+          <span class="fragment"></span>
+          <span class="fragment"></span>          
+          <span class="fragment"></span>
+          <!-- 
+          ***** D3 (low priority) ******
+          Highlight the connections as data flows through.
+          -->
+        </section>
+
+        <section id="rectangles-for-nilm">
+          <h1>Bounding Rectangle</h1>
+          <p class="placeholder"></p>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>          
+          <!-- 
+          ***** D3 (low priority) ******
+          Highlight the connections as data flows through.
+          -->
+        </section>
+
+
+        <section>
+          <h3>Example Output from Deep Neural Net</h3>
+          <div style="height: 600px; width: 1000px;">
+
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>LSTM</p>
+              <object data="images/net_output_LSTM.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>
+
+            
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>Autoencoder</p>
+              <object data="images/net_output_AE.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>
+
+
+            <div class="fragment current-visible" style="position:absolute;">
+              <p>Rectangles</p>
+              <object data="images/net_output_rectangles.svg"
+                      type="image/svg+xml" width=1000></object>              
+            </div>            
+
+          </div>
+        </section>
+
+
+        <section>          
+          <object data="images/net_output_no_overlap.svg"
+                  type="image/svg+xml" width=1000></object>              
+        </section>
+
+        
+        
+      </div>
+
+    </div>
+
+    <!-- REVEAL -->
+    <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="bower_components/reveal.js/js/reveal.js"></script>
+
+    <!-- D3 -->
+    <script src="bower_components/d3/d3.js"></script>
+
+    <!-- REVEAL TO D3 -->
+    <script src="js/reveal-to-d3-config.js"></script>
+    <script src="js/reveal-to-d3.js"></script>
+    <script src="js/d3-common.js"></script>    
+    <script src="js/d3-plot-power-data.js"></script>
+    <script src="js/d3-plot-neural-nets.js"></script>    
+    
+    <!-- REVEAL INIT -->
+    <script src="js/reveal-init.js"></script>
+    
+  </body>
+</html>
